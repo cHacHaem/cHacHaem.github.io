@@ -5,7 +5,7 @@ var spr2X = 80;
 var spr2Y = 80;
 alert("Click Screen Before Using Control Keys")
 function setup() {
-  createCanvas(windowWidth, windowHeight-100)
+  createCanvas(windowWidth, windowHeight-200)
   //getting video ready:
   face = createCapture(VIDEO)
   face.hide()
@@ -58,5 +58,5 @@ function keyPressed() {
 }
 
 function windowResized() {
-  createCanvas(windowWidth, windowHeight-100)
+  createCanvas(windowWidth, windowHeight-200)
 }
