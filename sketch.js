@@ -25,6 +25,9 @@ function draw() {
   rect(sprX, sprY, 30, 50)
   line(sprX-10, sprY+30, sprX, sprY)
   line(sprX+30, sprY, sprX+40, sprY+30)
+  // door:
+  fill
+  rect(windowHeight/2, windowWidth-80, 50, 70)
   
   
   }
