@@ -12,7 +12,7 @@ var drawHouse = function(x, y, name) {
     
 };
 function setup() {
-  createCanvas(800, 550);
+  createCanvas(5000, 550);
 }
 
 function draw() {
