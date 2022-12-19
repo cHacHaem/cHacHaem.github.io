@@ -28,7 +28,8 @@ function draw() {
     line(spriteX+16, spriteY+20, spriteX+30, spriteY+10);
     
     if(keyIsPressed) {
-        fullscreen()
+        let fs = fullscreen();
+    fullscreen(!fs);
         //down
         if(keyCode === 40) {
             spriteY = spriteY+1;   
