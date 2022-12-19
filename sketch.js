@@ -26,10 +26,14 @@ function draw() {
     rect(spriteX-15, spriteY+10, 30, 45);
     line(spriteX-15, spriteY+20, spriteX-30, spriteY+10);
     line(spriteX+16, spriteY+20, spriteX+30, spriteY+10);
-    
-    if(keyIsPressed) {
+    if(mouseIsPressed) {
         let fs = fullscreen();
     fullscreen(!fs);
+    
+    }
+    
+    if(keyIsPressed) {
+        
         //down
         if(keyCode === 40) {
             spriteY = spriteY+1;   
