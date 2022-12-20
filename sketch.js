@@ -21,21 +21,29 @@ function draw() {
 
 
     background(20, 184, 50);
-    drawHouse(200, 200, "Add A shop Using the google form above");
-  
-    drawHouse(400, 200, "PJA Library");
+    drawHouse(200, 200, "PJA Library");
   
     
-    
-  }
-    ellipse(spriteX, spriteY, 20, 20);
+  ellipse(spriteX, spriteY, 20, 20);
     rect(spriteX-15, spriteY+10, 30, 45);
     line(spriteX-15, spriteY+20, spriteX-30, spriteY+10);
     line(spriteX+16, spriteY+20, spriteX+30, spriteY+10);
-    if(mouseIsPressed) {
+    if(spriteY ) {
         
     
     }
+  text(mouseX, 10, 20)
+  text(mouseY, 50, 20)
+  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 200 && spriteX <= 350 ) {
+    fill("rgb(0,255,219)")
+    rect(10, 10, 990, 540);
+    textSize(80)
+    fill("purple")
+    text("PJA Library:", 10, 90);
+    textSize(40);
+    text("book: $6", 10, 150);
+    
+  }
     
     if(keyIsPressed) {
         
@@ -58,6 +66,11 @@ function draw() {
         
     
     
+  
+    
+    
+  }
+    
 
 
 
@@ -67,3 +80,4 @@ function draw() {
 
     
 }
+
