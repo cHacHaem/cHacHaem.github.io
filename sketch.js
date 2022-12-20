@@ -32,8 +32,7 @@ function draw() {
         
     
     }
-  text(mouseX, 10, 20)
-  text(mouseY, 50, 20)
+  
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 200 && spriteX <= 350 ) {
     fill("rgb(0,255,219)")
     rect(10, 10, 990, 540);
