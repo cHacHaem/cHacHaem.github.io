@@ -22,13 +22,18 @@ function draw() {
 
     background(20, 184, 50);
     drawHouse(200, 200, "Add A shop Using the google form above");
+  
+    drawHouse(400, 200, "PJA Library");
+  
+    
+    
+  }
     ellipse(spriteX, spriteY, 20, 20);
     rect(spriteX-15, spriteY+10, 30, 45);
     line(spriteX-15, spriteY+20, spriteX-30, spriteY+10);
     line(spriteX+16, spriteY+20, spriteX+30, spriteY+10);
     if(mouseIsPressed) {
-        let fs = fullscreen();
-    fullscreen(!fs);
+        
     
     }
     
@@ -51,7 +56,7 @@ function draw() {
             spriteY = spriteY-1;   
         }
         
-    }
+    
     
 
 
