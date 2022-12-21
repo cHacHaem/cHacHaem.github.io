@@ -22,6 +22,8 @@ function draw() {
 
     background(20, 184, 50);
     drawHouse(200, 200, "PJA Library");
+  drawHouse(500, 200, "Our Mural");
+  drawHouse(800, 200, "Yae publishing");
   
     
   ellipse(spriteX, spriteY, 20, 20);
@@ -32,7 +34,8 @@ function draw() {
         
     
     }
-  
+  text(mouseX, 10, 20)
+  text(mouseY, 50, 20)
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 200 && spriteX <= 350 ) {
     fill("rgb(0,255,219)")
     rect(10, 10, 990, 540);
@@ -41,6 +44,29 @@ function draw() {
     text("PJA Library:", 10, 90);
     textSize(40);
     text("book: $6", 10, 150);
+    text("To buy stuff go to Peyton, Jasmine, or Amy", 10, 420)
+    
+  }
+  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 500 && spriteX <= 650 ) {
+    fill("rgb(101,0,255)")
+    rect(10, 10, 990, 540);
+    textSize(80)
+    fill("purple")
+    text("Our Mural", 10, 90);
+    textSize(40);
+    text("We sell origami and drawings. The price depends on how hard the drawing is. The origami also depends on which one you want which is based on frogs. The more rare the frog the more you need to pay.", 10, 150, 980, 540);
+    text("To buy stuff go to Jhaylee, Lesley, or Evie", 10, 420)
+    
+  }
+  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 800 && spriteX <= 950 ) {
+    fill("rgb(255,151,0)")
+    rect(10, 10, 990, 540);
+    textSize(80)
+    fill("purple")
+    text("Our Mural", 10, 90);
+    textSize(40);
+    text("", 10, 150, 980, 540);
+    text("To buy stuff go to Tristen", 10, 420)
     
   }
     
