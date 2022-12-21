@@ -1,6 +1,6 @@
     
-    var spriteY = 200;
-var spriteX = 400;
+    var spriteY = 400;
+var spriteX = 1000;
 var drawHouse = function(x, y, name) {
     fill(0, 4, 255);
     rect(x, y, 150, 100);
@@ -12,7 +12,7 @@ var drawHouse = function(x, y, name) {
     
 };
 function setup() {
-  createCanvas(1000, 550);
+  createCanvas(2000, 800);
 }
 
 function draw() {
@@ -24,6 +24,8 @@ function draw() {
     drawHouse(200, 200, "PJA Library");
   drawHouse(500, 200, "Our Mural");
   drawHouse(800, 200, "Yae publishing");
+  drawHouse(1100, 200, "Fernando and Dylan,s name tag and post-it shop")
+  drawHouse(1400, 200, "origami")
   
     
   ellipse(spriteX, spriteY, 20, 20);
@@ -63,10 +65,34 @@ function draw() {
     rect(10, 10, 990, 540);
     textSize(80)
     fill("purple")
-    text("Yae Publishing", 10, 90);
+    text("Our Mural", 10, 90);
     textSize(40);
     text("", 10, 150, 980, 540);
     text("To buy stuff go to Tristen", 10, 420)
+    
+  }
+  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1100 && spriteX <= 1250 ) {
+    fill("rgb(255,151,0)")
+    rect(10, 10, 990, 540);
+    textSize(80)
+    fill("purple")
+    text("Fernando and Dylan,s name tag and post-it shop", 10, 90);
+    textSize(40);
+    text("post-it oragami and name tags: $20 science", 10, 150, 920, 540);
+    text("To buy stuff go to Fernando or Dylan", 10, 420, 980)
+    
+    
+  }
+  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1400 && spriteX <= 1550 ) {
+    fill("rgb(255,151,0)")
+    rect(10, 10, 990, 540);
+    textSize(80)
+    fill("rgb(24,0,128)")
+    text("Origami", 10, 90);
+    textSize(40);
+    text("everything depends on how hard the origami  was to make. example: swan: 15$ and somthing really hard: $25", 10, 150, 920, 540);
+    text("To buy stuff go to Jordan, Jackson, or Elias", 10, 420, 980)
+    
     
   }
     
