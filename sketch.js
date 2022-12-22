@@ -1,4 +1,17 @@
     
+    let fer;
+let pey;
+let tri;
+function preload() {
+  fer = loadImage('images/IMG_20221216_090446 - Fernando Gallardo.jpg');
+  pey = loadImage('images/Screenshot 2022-12-14 3.05.48 PM - Peyton Smith.png');
+  tri = loadImage('images/Screenshot 2022-12-16 3.06.26 PM - Tristen Dabbs.png');
+  
+  
+}
+  
+
+    
     var spriteY = 400;
 var spriteX = 1000;
 var drawHouse = function(x, y, name) {
@@ -54,6 +67,7 @@ function draw() {
     textSize(40);
     text("book: $6", 10, 150);
     text("To buy stuff go to Peyton, Jasmine, or Amy", 10, 420)
+    image(pey, 700, 30);
     
   }
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 500 && spriteX <= 650 ) {
@@ -76,6 +90,7 @@ function draw() {
     textSize(40);
     text("Book: $5", 10, 150, 980, 540);
     text("To buy stuff go to Tristen", 10, 420)
+    image(tri, 700, 30);
     
   }
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1100 && spriteX <= 1250 ) {
@@ -87,6 +102,7 @@ function draw() {
     textSize(40);
     text("post-it oragami and name tags: $20", 10, 150, 920, 540);
     text("To buy stuff go to Fernando or Dylan", 10, 420, 980)
+    image(fer, 700, 120);
     
     
   }
@@ -150,4 +166,3 @@ function draw() {
 
     
 }
-
