@@ -12,7 +12,7 @@ var drawHouse = function(x, y, name) {
     
 };
 function setup() {
-  createCanvas(2000, 800);
+  createCanvas(1500, 800);
 }
 
 function draw() {
@@ -25,7 +25,8 @@ function draw() {
   drawHouse(500, 200, "Our Mural");
   drawHouse(800, 200, "Yae publishing");
   drawHouse(1100, 200, "Fernando and Dylan,s name tag and post-it shop")
-  drawHouse(1400, 200, "origami")
+  drawHouse(1100, 500, "origami")
+  drawHouse(800, 500, "Custom Games")
   
     
   ellipse(spriteX, spriteY, 20, 20);
@@ -83,15 +84,27 @@ function draw() {
     
     
   }
-  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1400 && spriteX <= 1550 ) {
+  if(spriteY <= 603 && spriteY >= 435 && spriteX >= 1100 && spriteX <= 1250 ) {
     fill("rgb(255,151,0)")
-    rect(10, 10, 990, 540);
+    rect(10, 10, 1500-20, 800-20);
     textSize(80)
     fill("rgb(24,0,128)")
     text("Origami", 10, 90);
     textSize(40);
     text("everything depends on how hard the origami  was to make. example: swan: 15$ and somthing really hard: $25", 10, 150, 920, 540);
     text("To buy stuff go to Jordan, Jackson, or Elias", 10, 420, 980)
+    
+    
+  }
+  if(spriteY <= 603 && spriteY >= 435 && spriteX >= 800 && spriteX <= 950 ) {
+    fill("rgb(0,255,255)")
+    rect(10, 10, 1500-20, 800-20);
+    textSize(80)
+    fill("rgb(255,43,18)")
+    text("Custom Games", 10, 90);
+    textSize(40);
+    text("Each game is $15", 10, 150, 920, 540);
+    text("To buy stuff go to Emory", 10, 420, 980)
     
     
   }
