@@ -5,11 +5,11 @@ let tri;
 let jac;
 let em;
 function preload() {
-  fer = loadImage('images/IMG_20221216_090446 - Fernando Gallardo.jpg');
-  pey = loadImage('images/Screenshot 2022-12-14 3.05.48 PM - Peyton Smith.png');
-  tri = loadImage('images/Screenshot 2022-12-16 3.06.26 PM - Tristen Dabbs.png');
-  jac = loadImage("images/Screenshot 2022-12-22 2.39.35 PM - Jackson Bivens.png");
-  em = loadImage("images/New Piskel-1.png.png");
+  fer = loadImage('IMG_20221216_090446 - Fernando Gallardo.jpg');
+  pey = loadImage('Screenshot 2022-12-14 3.05.48 PM - Peyton Smith.png');
+  tri = loadImage('Screenshot 2022-12-16 3.06.26 PM - Tristen Dabbs.png');
+  jac = loadImage("Screenshot 2022-12-22 2.39.35 PM - Jackson Bivens.png");
+  em = loadImage("New Piskel-1.png.png");
   
   
 }
