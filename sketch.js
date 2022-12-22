@@ -14,6 +14,12 @@ var drawHouse = function(x, y, name) {
 function setup() {
   createCanvas(1340, 800);
 }
+function mousePressed() {
+ 
+    let fs = fullscreen();
+    fullscreen(!fs);
+  
+}
 
 function draw() {
   
