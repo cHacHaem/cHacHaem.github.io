@@ -47,7 +47,7 @@ function draw() {
   text(mouseY, 50, 20)
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 200 && spriteX <= 350 ) {
     fill("rgb(0,255,219)")
-    rect(10, 10, 990, 540);
+    rect(10, 10, 1500-20, 800-20);
     textSize(80)
     fill("purple")
     text("PJA Library:", 10, 90);
@@ -58,7 +58,7 @@ function draw() {
   }
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 500 && spriteX <= 650 ) {
     fill("rgb(101,0,255)")
-    rect(10, 10, 990, 540);
+    rect(10, 10, 1500-20, 800-20);
     textSize(80)
     fill("purple")
     text("Our Mural", 10, 90);
@@ -69,7 +69,7 @@ function draw() {
   }
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 800 && spriteX <= 950 ) {
     fill("rgb(255,151,0)")
-    rect(10, 10, 990, 540);
+    rect(10, 10, 1500-20, 800-20);
     textSize(80)
     fill("purple")
     text("Our Mural", 10, 90);
@@ -80,7 +80,7 @@ function draw() {
   }
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1100 && spriteX <= 1250 ) {
     fill("rgb(255,151,0)")
-    rect(10, 10, 990, 540);
+    rect(10, 10, 1500-20, 800-20);
     textSize(80)
     fill("purple")
     text("Fernando and Dylan,s name tag and post-it shop", 10, 90);
