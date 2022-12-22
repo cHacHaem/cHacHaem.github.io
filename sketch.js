@@ -119,19 +119,19 @@ function draw() {
         
         //down
         if(keyCode === 40) {
-            spriteY = spriteY+1;   
+            spriteY = spriteY+3;   
         }
         // left
         if(keyCode === 37) {
-            spriteX = spriteX-1;   
+            spriteX = spriteX-3;   
         }
         // right
         if(keyCode === 39) {
-            spriteX = spriteX+1;   
+            spriteX = spriteX+3;   
         }
         //up
         if(keyCode === 38) {
-            spriteY = spriteY-1;   
+            spriteY = spriteY-3;   
         }
         
     
