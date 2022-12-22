@@ -72,7 +72,7 @@ function draw() {
     rect(10, 10, 1500-20, 800-20);
     textSize(80)
     fill("purple")
-    text("Our Mural", 10, 90);
+    text("Yae publishing", 10, 90);
     textSize(40);
     text("", 10, 150, 980, 540);
     text("To buy stuff go to Tristen", 10, 420)
