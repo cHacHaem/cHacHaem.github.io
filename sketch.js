@@ -2,10 +2,14 @@
     let fer;
 let pey;
 let tri;
+let jac;
+let em;
 function preload() {
   fer = loadImage('images/IMG_20221216_090446 - Fernando Gallardo.jpg');
   pey = loadImage('images/Screenshot 2022-12-14 3.05.48 PM - Peyton Smith.png');
   tri = loadImage('images/Screenshot 2022-12-16 3.06.26 PM - Tristen Dabbs.png');
+  jac = loadImage("images/Screenshot 2022-12-22 2.39.35 PM - Jackson Bivens.png");
+  em = loadImage("images/New Piskel-1.png.png");
   
   
 }
@@ -44,7 +48,7 @@ function draw() {
   drawHouse(500, 200, "Our Mural");
   drawHouse(800, 200, "Yae publishing");
   drawHouse(1100, 200, "Fernando and Dylan,s name tag and post-it shop")
-  drawHouse(1100, 500, "origami")
+  drawHouse(1100, 500, "orgimi")
   drawHouse(800, 500, "Custom Games")
   
     
@@ -111,10 +115,11 @@ function draw() {
     rect(10, 10, 1500-20, 800-20);
     textSize(80)
     fill("rgb(24,0,128)")
-    text("Origami", 10, 90);
+    text("Orgimi", 10, 90);
     textSize(40);
-    text("everything depends on how hard the origami  was to make. example: swan: 15$ and somthing really hard: $25", 10, 150, 920, 540);
+    text("everything depends on how hard the origami  was to make. example: swan: 15$ and somthing really hard: $25", 10, 150, 850, 540);
     text("To buy stuff go to Jordan, Jackson, or Elias", 10, 420, 980)
+    image(jac, 800, 1)
     
     
   }
@@ -127,6 +132,7 @@ function draw() {
     textSize(40);
     text("Each game is $50", 10, 150, 920, 540);
     text("To buy stuff go to Emory", 10, 420, 980)
+    image(em, 579, 12);
     
     
   }
