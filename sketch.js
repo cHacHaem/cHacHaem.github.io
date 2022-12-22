@@ -81,7 +81,7 @@ function draw() {
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1100 && spriteX <= 1250 ) {
     fill("rgb(255,151,0)")
     rect(10, 10, 1500-20, 800-20);
-    textSize(80)
+    textSize(70)
     fill("purple")
     text("Fernando and Dylan,s name tag and post-it shop", 10, 90);
     textSize(40);
