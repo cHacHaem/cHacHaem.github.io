@@ -74,14 +74,14 @@ function draw() {
     fill("purple")
     text("Yae publishing", 10, 90);
     textSize(40);
-    text("", 10, 150, 980, 540);
+    text("Book: $5", 10, 150, 980, 540);
     text("To buy stuff go to Tristen", 10, 420)
     
   }
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1100 && spriteX <= 1250 ) {
     fill("rgb(255,151,0)")
     rect(10, 10, 1500-20, 800-20);
-    textSize(70)
+    textSize(60)
     fill("purple")
     text("Fernando and Dylan,s name tag and post-it shop", 10, 90);
     textSize(40);
