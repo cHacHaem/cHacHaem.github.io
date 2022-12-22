@@ -85,7 +85,7 @@ function draw() {
     fill("purple")
     text("Fernando and Dylan,s name tag and post-it shop", 10, 90);
     textSize(40);
-    text("post-it oragami and name tags: $20 science", 10, 150, 920, 540);
+    text("post-it oragami and name tags: $20", 10, 150, 920, 540);
     text("To buy stuff go to Fernando or Dylan", 10, 420, 980)
     
     
