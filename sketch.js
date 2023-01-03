@@ -105,8 +105,9 @@ function draw() {
     text("Fernando and Dylan,s name tag and post-it shop", 10, 90);
     textSize(40);
     text("post-it oragami and name tags: $20", 10, 150, 920, 540);
-    text("To buy stuff go to Fernando, Dylan, or Zayna", 10, 420, 980)
     image(fer, 700, 120);
+    text("To buy stuff go to Fernando, Dylan, or Zayna", 10, 420, 980)
+    
     
     
   }
