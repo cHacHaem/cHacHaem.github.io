@@ -1,4 +1,5 @@
     
+    let vid;    
     let fer;
 let pey;
 let tri;
@@ -31,7 +32,13 @@ var drawHouse = function(x, y, name) {
     
 };
 function setup() {
-  createCanvas(1350, 700);
+  vid = createVideo("Screen recording 2023-01-04 3.14.02 PM - Peyton Smith.webm")
+  vid.loop()
+  
+  
+  createCanvas(1350, 485);
+  
+  
 }
 function mousePressed() {
  
@@ -46,12 +53,12 @@ function draw() {
 
 
     background(20, 184, 50);
-    drawHouse(200, 200, "PJA Library");
-  drawHouse(500, 200, "Our Mural");
-  drawHouse(800, 200, "Yae publishing");
-  drawHouse(1100, 200, "Fernando and Dylan,s name tag and post-it shop")
-  drawHouse(1100, 500, "orgimi")
-  drawHouse(800, 500, "Custom Games")
+    drawHouse(200, 100, "PJA Library");
+  drawHouse(500, 100, "Our Mural");
+  drawHouse(800, 100, "Yae publishing");
+  drawHouse(1100, 100, "Fernando and Dylan,s name tag and post-it shop")
+  drawHouse(1100, 400, "orgimi")
+  drawHouse(800, 400, "Custom Games")
   
     
   ellipse(spriteX, spriteY, 20, 20);
@@ -64,7 +71,7 @@ function draw() {
     }
   text(mouseX, 10, 20)
   text(mouseY, 50, 20)
-  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 200 && spriteX <= 350 ) {
+  if(spriteY <= 203 && spriteY >= 35 && spriteX >= 200 && spriteX <= 350 ) {
     fill("rgb(0,255,219)")
     rect(10, 10, 1500-20, 800-20);
     textSize(80)
@@ -76,7 +83,7 @@ function draw() {
     image(pey, 700, 30);
     
   }
-  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 500 && spriteX <= 650 ) {
+  if(spriteY <= 203 && spriteY >= 35 && spriteX >= 500 && spriteX <= 650 ) {
     fill("rgb(101,0,255)")
     rect(10, 10, 1500-20, 800-20);
     textSize(80)
@@ -89,7 +96,7 @@ function draw() {
     
     
   }
-  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 800 && spriteX <= 950 ) {
+  if(spriteY <= 203 && spriteY >= 35 && spriteX >= 800 && spriteX <= 950 ) {
     fill("rgb(255,151,0)")
     rect(10, 10, 1500-20, 800-20);
     textSize(80)
@@ -101,7 +108,7 @@ function draw() {
     image(tri, 700, 30);
     
   }
-  if(spriteY <= 303 && spriteY >= 135 && spriteX >= 1100 && spriteX <= 1250 ) {
+  if(spriteY <= 203 && spriteY >= 35 && spriteX >= 1100 && spriteX <= 1250 ) {
     fill("rgb(255,151,0)")
     rect(10, 10, 1500-20, 800-20);
     textSize(60)
@@ -115,7 +122,7 @@ function draw() {
     
     
   }
-  if(spriteY <= 603 && spriteY >= 435 && spriteX >= 1100 && spriteX <= 1250 ) {
+  if(spriteY <= 503 && spriteY >= 335 && spriteX >= 1100 && spriteX <= 1250 ) {
     fill("rgb(255,151,0)")
     rect(10, 10, 1500-20, 800-20);
     textSize(80)
@@ -128,7 +135,7 @@ function draw() {
     
     
   }
-  if(spriteY <= 603 && spriteY >= 435 && spriteX >= 800 && spriteX <= 950 ) {
+  if(spriteY <= 503 && spriteY >= 335 && spriteX >= 800 && spriteX <= 950 ) {
     fill("rgb(0,255,255)")
     rect(10, 10, 1500-20, 800-20);
     textSize(80)
