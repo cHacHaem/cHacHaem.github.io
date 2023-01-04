@@ -4,12 +4,14 @@ let pey;
 let tri;
 let jac;
 let em;
+let jay;
 function preload() {
   fer = loadImage('IMG_20221216_090446 - Fernando Gallardo.jpg');
   pey = loadImage('Screenshot 2022-12-14 3.05.48 PM - Peyton Smith.png');
   tri = loadImage('Screenshot 2022-12-16 3.06.26 PM - Tristen Dabbs.png');
   jac = loadImage("Screenshot 2022-12-22 2.39.35 PM - Jackson Bivens.png");
   em = loadImage("New Piskel-1.png.png");
+  jay = loadImage("Origami - Jhaylee Sumba.png");
   
   
 }
@@ -81,8 +83,10 @@ function draw() {
     fill("purple")
     text("Our Mural", 10, 90);
     textSize(40);
+    image(jay, 850, 30);
     text("We sell origami and drawings. The price depends on how hard the drawing is. The origami also depends on which one you want which is based on frogs. The more rare the frog the more you need to pay.", 10, 150, 980, 540);
     text("To buy stuff go to Jhaylee, Lesley, or Evie", 10, 420)
+    
     
   }
   if(spriteY <= 303 && spriteY >= 135 && spriteX >= 800 && spriteX <= 950 ) {
