@@ -32,8 +32,7 @@ var drawHouse = function(x, y, name) {
     
 };
 function setup() {
-  vid = createVideo("Screen recording 2023-01-04 3.14.02 PM - Peyton Smith.webm")
-  vid.loop()
+  
   
   
   createCanvas(1350, 485);
