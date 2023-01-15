@@ -141,7 +141,7 @@ function draw() {
     fill("rgb(255,43,18)")
     text("Custom Games", 10, 90);
     textSize(40);
-    text("Each game is $30", 10, 150, 920, 540);
+    text("Each game is around $10 the price depends on the game.", 10, 150, 920, 540);
     text("To buy stuff go to Emory", 10, 420, 980)
     image(em, 579, 12);
     
