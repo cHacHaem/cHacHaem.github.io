@@ -1,4 +1,4 @@
-    
+  let jack;     
     let vid;    
     let fer;
 let pey;
@@ -13,7 +13,7 @@ function preload() {
   jac = loadImage("Screenshot 2022-12-22 2.39.35 PM - Jackson Bivens.png");
   em = loadImage("New Piskel-1.png.png");
   jay = loadImage("Origami - Jhaylee Sumba.png");
-  
+  jack = loadImage("canvas (5) - Jack Fisher.png")
   
 }
   
@@ -58,6 +58,7 @@ function draw() {
   drawHouse(1100, 100, "Fernando and Dylan,s name tag and post-it shop")
   drawHouse(1100, 400, "orgimi")
   drawHouse(800, 400, "Custom Games")
+  drawHouse(500, 400, "Jacks Arcade");
   
     
   ellipse(spriteX, spriteY, 20, 20);
@@ -144,6 +145,19 @@ function draw() {
     text("Each game is around $10 the price depends on the game.", 10, 150, 920, 540);
     text("To buy stuff go to Emory", 10, 420, 980)
     image(em, 579, 12);
+    
+    
+  }
+  if(spriteY <= 500 && spriteY >= 335 && spriteX >= 500 && spriteX <= 650 ) {
+    fill("rgb(0,255,255)")
+    rect(10, 10, 1500-20, 800-20);
+    textSize(80)
+    fill("rgb(255,43,18)")
+    text("Jacks Arcade", 10, 90);
+    textSize(40);
+    text("$10 to play a game", 10, 150, 920, 540);
+    text("To buy stuff go to Jack", 10, 420, 980)
+    image(jack, 579, 12);
     
     
   }
