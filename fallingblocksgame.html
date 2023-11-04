@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.2/dist/aframe-physics-system.min.js
+"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
 
+  </head>
+  <body>
+    <a-scene physics="friction: 0; restitution: 0.1">
+      <a-camera position="0 2 3" wasd-controls-enabled="false" look-controls-enabled="false">
+        <a-entity id="text1" text="align: center; value: GAME OVER; color: red; width: 10" position="-20 0 5" animation="property: position; from: -3 0 -1; to: 0 0 -1; startEvents: gameOve; dur: 1000"></a-entity>
+        <a-entity id="scoreText" text="align: right; value: score: 0; color: blue; width: 3" position="-2.1 0.75 -1"></a-entity>
+      </a-camera>
+      <a-box position="0 0 0" width="100" depth="100" color="green" static-body="shape: box" rotation="20 0 0"></a-box>
+      <a-box position="0 1 0" color="blue" id="player" static-body="shape: box" animation="property: position; from: 0 1 -5; to: 0 1 5; startEvents: ob1Move; dur: 5000"></a-box>
+      <a-box position="0 5 -5" color="purple" id="ob1" dynamic-body="shape: box" ></a-box>
+      <a-box position="0 5 -7" color="purple" id="ob2" dynamic-body="shape: box; mass: 0" ></a-box>
+    </a-scene>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+ 
