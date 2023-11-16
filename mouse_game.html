@@ -2,24 +2,62 @@
 <html lang="en">
   <head>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.2/dist/aframe-physics-system.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="utf-8" />
-
   </head>
   <body>
-    <a-scene>
-      <a-entity rotation="-10 0 0" id="camera" camera position="0 8 30" cursor="rayOrigin: mouse"></a-entity>
-      <a-box gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/mouse_for_emorygame%20(1).gltf?v=1700053272544" id="mouse" scale="4 4 4" animation="property: position; from: 0 0 0; to: 0 20 5; dur: 5000; autoplay: true; loop: false; startEvents: move"></a-box>
-      <a-box position="0 -1 0" scale="50 1 50" color="green"  id="ground"></a-box>
-      <a-box id="mouseTrap"></a-box>
-        <a-box id="mouseTrap1"></a-box>
-        <a-box id="mouseTrap2"></a-box>
-        <a-box id="mouseTrap3"></a-box>
+    <a-scene phisics="debug: true">
+      <a-entity
+        rotation="-10 0 0"
+        id="camera"
+        camera
+        position="0 8 30"
+        cursor="rayOrigin: mouse"
+      ></a-entity>
+      <a-box
+        id="mouse"
+        scale="2 1 1"
+        animation="property: position; from: 0 0 0; to: 0 20 5; dur: 5000; autoplay: true; loop: false; startEvents: move"
+        static-body="shape: box"
+      ></a-box>
+      <a-box
+        position="0 -1 0"
+        scale="50 1 50"
+        color="green"
+        id="ground"
+        static-body="shape: box"
+      ></a-box>
+      <a-box
+        visible="true"
+        id="mouseTrap"
+        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
+        color="red"
+        dynamic-body="shape: box; mass: 2"
+        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
+      ></a-box>
+      <a-box
+        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
+        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
+        id="mouseTrap1"
+        dynamic-body="shape: box; mass: 2"
+      ></a-box>
+      <a-box
+        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
+        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
+        id="mouseTrap2"
+        dynamic-body="shape: box; mass: 2"
+      ></a-box>
+      <a-box
+        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
+        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
+        id="mouseTrap3"
+        dynamic-body="shape: box; mass: 2"
+      ></a-box>
     </a-scene>
-    <main>
-    </main>
-    <script src="other.js"></script>
+    <main></main>
+    <script src="sketch.js"></script>
   </body>
 </html>
