@@ -18,10 +18,11 @@
         cursor="rayOrigin: mouse"
       ></a-entity>
       <a-box
+        scale="4 4 4"
         id="mouse"
-        scale="2 1 1"
         animation="property: position; from: 0 0 0; to: 0 20 5; dur: 5000; autoplay: true; loop: false; startEvents: move"
         static-body="shape: box"
+        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/mouse_for_emorygame%20(1).gltf?v=1700053272544"
       ></a-box>
       <a-box
         position="0 -1 0"
@@ -35,7 +36,6 @@
         visible="true"
         id="mouseTrap"
         animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
-        color="red"
         dynamic-body="shape: box; mass: 2"
         gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
       ></a-box>
