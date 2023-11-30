@@ -3,65 +3,107 @@
   <head>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.2/dist/aframe-physics-system.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Mouse Trap</title>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYjTTXMhOvFXa_50ZvM9Ot63h--U7hfBfWmnbV3CmdRNFnlKhP9GfzPiRqsFco0k8OuUODkWOl8p3CXmYYQRSNKwIgbUK5kA"
+    />
     <meta charset="utf-8" />
   </head>
   <body>
-    <a-scene phisics="debug: true">
+    <a-scene>
+      <a-assets>
+        <a-asset-item
+          id="mouseModel"
+          src="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/mouse_for_emorygame%20(1).gltf?v=1700053272544"
+        ></a-asset-item>
+        <a-asset-item
+          id="cheeseModel"
+          src="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Cheese2.gltf?v=17002259711654"
+        ></a-asset-item>
+        <a-asset-item
+          id="mouseTrapModel"
+          src="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
+        ></a-asset-item>
+        <a-asset-item
+          id="barneyModel"
+          src="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/model.gltf?v=1700054764940"
+        ></a-asset-item>
+      </a-assets>
       <a-entity
         rotation="-10 0 0"
         id="camera"
         camera
-        position="0 8 30"
+        position="0 8 33"
         cursor="rayOrigin: mouse"
-      ></a-entity>
-      <a-box
-        scale="4 4 4"
-        id="mouse"
-        animation="property: position; from: 0 0 0; to: 0 20 5; dur: 5000; autoplay: true; loop: false; startEvents: move"
-        static-body="shape: box"
-        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/mouse_for_emorygame%20(1).gltf?v=1700053272544"
-      ></a-box>
-      <a-box
-        position="0 -1 0"
-        scale="50 1 50"
+      >
+        <a-text
+          id="gameText"
+          value="GAME OVER"
+          position="-500 0 -1"
+          align="center"
+          color="red"
+          animation__enter="property: position; from: -5 0 -1; to: 0 0 -1; dur: 2000; startEvents: startaniE"
+          animation__leave="property: position; from: 0 0 -1; to: -5 0 -1; dur: 2000; startEvents: startaniL"
+        ></a-text>
+        <a-text
+          id="startButton"
+          position="-1.5 0.75 -1"
+          value="Start Game"
+          color="orange"
+          geometry="primitive:plane; width: 1.4; height: 0.1"
+          align="left"
+          width="3"
+          material="color: green"
+        ></a-text>
+      </a-entity>
+      <a-entity
+scale="50 1 50"
         color="green"
         id="ground"
         static-body="shape: box"
       ></a-box>
-      <a-box
-        scale="4 4 4"
+      <a-entity
+        id="cheese"
+        position="0 0 -24"
+        gltf-model="#cheeseModel"
+        dynamic-body="shape: box; mass: 2"
+        scale="6 6 6"
+        rotation="0 100 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#mouseTrapModel"
+        scale="5 5 5"
+        position="10 0 0"
         visible="true"
         id="mouseTrap"
-        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
         dynamic-body="shape: box; mass: 2"
-        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
-      ></a-box>
-      <a-box
-        scale="4 4 4"
-        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
-        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
+      ></a-entity>
+      <a-entity
+        gltf-model="#mouseTrapModel"
+        scale="5 5 5"
+        position="-10 0 0"
         id="mouseTrap1"
         dynamic-body="shape: box; mass: 2"
-      ></a-box>
-      <a-box
-        scale="4 4 4"
-        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
-        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
+      ></a-entity>
+      <a-entity
+        gltf-model="#mouseTrapModel"
+        scale="5 5 5"
+        position="-18 0 0"
         id="mouseTrap2"
         dynamic-body="shape: box; mass: 2"
-      ></a-box>
-      <a-box
-        scale="4 4 4"
-        gltf-model="https://cdn.glitch.global/e6da15e8-96ca-4bd7-9522-2905b48a5bd0/Mouse_trap.gltf?v=1700053886424"
-        animation="property: visible; from: true; to: false; startEvents: invis; dur: 1000"
+      ></a-entity>
+      <a-entity
+        gltf-model="#mouseTrapModel"
+        scale="5 5 5"
+        position="0 0 0"
         id="mouseTrap3"
         dynamic-body="shape: box; mass: 2"
-      ></a-box>
+      ></a-entity>
     </a-scene>
     <main></main>
-    <script src="other.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
