@@ -1,0 +1,42 @@
+.chatMessages {
+  width: calc(25% + 2px);
+  height: calc(100% - 51px);
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: -2%;
+  background-color: black;
+  border-radius: 3% 3% 0 0;
+  z-index: 9998;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  overflow-y: auto;
+}
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+.chatInput {
+  width: calc(25% - 6px);
+  border-radius: 3%;
+  height: 50px;
+  position: absolute;
+  top: calc(100% - 51px);
+  left: -2%;
+  background-color: magenta;
+  z-index: 9999;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+}
+.sent_to {
+  border-radius: 25px;
+  position: relative;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 0px 1px 2px;
+  padding: 0px;
+  margin: 0px;
+    background-color: green;
+}
