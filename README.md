@@ -1,1 +1,1 @@
-why the f*ck are you reading this?
+why the flippers are you reading this?
